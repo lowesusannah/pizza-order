@@ -10,7 +10,7 @@
 
 ## Setup/Installation Requirements
   * _Download repository from GitHub
-  * _Open using your favorite -----
+  * _Open using your favorite xxxxxxxx
   * _Edit app files using your favorite text editor, such as Atom or Submlime
 
 ## App Specifications
@@ -29,7 +29,7 @@
   _xxx_
 
 ## Support and contact details
-  _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!
+   _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!
 
 ## Technologies used
   _This app uses JavaScript arrays and objects in order to support the front-end and business logic of the ordering system._

@@ -14,7 +14,42 @@
       <div class="jumbotron">
         <h1>Order Pizza!</h1>
       </div>
-
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Select your pizza options, and we'll have your pizza to you in no time!</h3>
+        </div>
+      </div>
+      <form id="pizza-form"  action="index.html" method="post">
+      <div class="row">
+        <div class="col-md-4">
+        <label for="pizza-size">Select your pizza's size</label>
+          <select class="form-control" id="pizza-size">
+            <option value="3">Small, starting at $8</option>
+            <option value="5">Medium, starting at $10</option>
+            <option value="6">Large, starting at $11</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="pizza-toppings">Select any additional toppings you'd like. Each additional topping is $.50 exta. </label>
+            <input type="checkbox" name="toppings" value=".5">Pepperoni<br>
+            <input type="checkbox" name="toppings" value=".5">Anchovies<br>
+            <input type="checkbox" name="toppings" value=".5">Extra Cheese<br>
+            <input type="checkbox" name="toppings" value=".5">Artichokes<br>
+            <input type="checkbox" name="toppings" value=".5">Mushrooms<br>
+            <input type="checkbox" name="toppings" value=".5">Peppers<br>
+          </div>
+        <div class="col-md-4">
+          <button type="submit" class-"btn btn-info" name="button">Get me my pizza!</button>
+        </div>
+      </div>
+      </form>
+        <div class="row">
+          <div id="total-cost" class="col-md-12">
+            <h3>Your total pizza cost is:</h3>
+            <h3></h3>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
