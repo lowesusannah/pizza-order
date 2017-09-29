@@ -5,13 +5,13 @@
 $(document).ready(function(){
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
-    $("form#pizza-form").hide();
-    $("#total-cost").show();
-    $("input:checkbox[name=pizza-toppings]: checked").each(function(){
-      var pizzaToppingSelection = ParseInt($(this).val());
-      var pizzaSize = ParseInt($("#pizza-size").val());
-      var totalCost = (pizzaToppingSelection + pizzaSize);
-      $("#total-cost").append("$" + totalCost + "<br>");
+    var pizzaSizeCost = parseInt($("#pizza-size").val());
+    var pizzaToppingCost = parseInt($(this).val());
+    $("input:checkbox [name=toppings]:checked").each(function(){
     });
+    var totalCost = pizzaToppingCost + pizzaSizeCost;
+    $("#total-cost").append("$" + totalCost + "<br>");
+    $("#total-cost").show();
+    $("form#pizza-form").hide();
   });
 });
