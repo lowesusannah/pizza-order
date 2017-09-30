@@ -10,12 +10,13 @@
 
 ## Setup/Installation Requirements
   * Download repository from GitHub
-  * Open using your favorite xxxxxxxx
+  * Open using your favorite command line application, like Terminal
   * Edit app files using your favorite text editor, such as Atom or Submlime
 
 ## App Specifications
   * cost of all pizzas, before any size selection is $5
-    * in: no options selected; out: $5 total price
+    * in: no options selected
+    * out: $5 total price
   * all options for pizza size displayed to user, with base cost for each. Base includes a plain pizza (cheese, tomato sauce and crust).
     * in: n/a
     * small, medium, large sizes - base cost for each is $3, $5 and $6 respectively
@@ -38,7 +39,7 @@
   _If multiple pizza toppings are selected, user is only charged for one topping._
 
 ## Support and contact details
-   _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!
+   _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!_
 
 ## Technologies used
   _This app uses JavaScript arrays and objects in order to support the front-end and business logic of the ordering system._
