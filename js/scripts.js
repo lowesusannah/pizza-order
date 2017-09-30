@@ -10,6 +10,7 @@ function Toppings(pepperoni, mushrooms, extraCheese) {
   this.cheese = extraCheese;
   };
 
+
 Pizza.prototype.findCost = function(size, toppings) {
   var toppingLength = [this.toppings].length;
   return this.size + toppingLength;
