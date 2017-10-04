@@ -1,7 +1,7 @@
 //business logic
-function Pizza(size, toppings) {
-  this.size = size;
-  this.toppings = [];
+function Pizza(sizeParameter, toppingsParameter) {
+  this.size = sizeParameter;
+  this.toppings = toppingsParameter;
 };
 
 function Toppings(pepperoni, mushrooms, extraCheese) {
@@ -11,9 +11,8 @@ function Toppings(pepperoni, mushrooms, extraCheese) {
   };
 
 
-Pizza.prototype.findCost = function(size, toppings) {
-  var toppingLength = [this.toppings].length;
-  return this.size + toppingLength;
+Pizza.prototype.findCost = function() {
+  return this.size + this.toppings.length;
 };
 
 //user-interface logic
@@ -21,15 +20,12 @@ $(document).ready(function(){
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
     var size = parseInt($("#pizza-size").val());
-
-    var toppings = $("input:checkbox[name=toppings]:checked").each(function() {
-      var pepperoni = $(this).find("input#pepperoni").val();
-      var mushrooms = $(this).find("input#mushrooms").val();
-      var extraCheese = $(this).find("input#extra-cheese").val();
-      var toppings = parseInt(pepperoni + mushrooms + extraCheese);
+    var toppingArray = [];
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      toppingArray.push($(this).val());
       });
-    var newPizza = new Pizza(size, toppings);
-    var finalPrice = newPizza.findCost(size, toppings);
+    var newPizza = new Pizza(size, toppingArray);
+    var finalPrice = newPizza.findCost();
     $("#total-cost").show();
     $("#total-cost").append("$" + finalPrice + "<br>");
     $("form#pizza-form").hide();

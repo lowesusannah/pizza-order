@@ -14,15 +14,12 @@
   * Edit app files using your favorite text editor, such as Atom or Submlime
 
 ## App Specifications
-  * cost of all pizzas, before any size selection is $5
-    * in: no options selected
-    * out: $5 total price
   * all options for pizza size displayed to user, with base cost for each. Base includes a plain pizza (cheese, tomato sauce and crust).
     * in: n/a
-    * small, medium, large sizes - base cost for each is $3, $5 and $6 respectively
+    * small, medium, large sizes - base cost for each is $7, $8 and $9 respectively
   * all options for toppings and additional cost displayed user
     * n/a
-    * anchovies, pepperoni, peppers, extra cheese, artichocke - $.50 per additional topping
+    * anchovies, pepperoni, mushrooms, extra cheese - $1 per additional topping
 
   * user can choose pizza size: small, medium or large and cost of pizza will change depending on size of pizza
     * in: select small pizza
@@ -36,7 +33,7 @@
 
 
 ## Known Bugs
-  _If multiple pizza toppings are selected, user is only charged for one topping._
+  _n/a_
 
 ## Support and contact details
    _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!_
