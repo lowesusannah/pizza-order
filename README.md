@@ -23,17 +23,18 @@
 
   * user can choose pizza size: small, medium or large and cost of pizza will change depending on size of pizza
     * in: select small pizza
-    * out: $8 total cost
+    * out: $7 total cost
+
   * user can choose one or more toppings for pizza and cost of pizza will increase for each topping
     * in: anchovies, pepperoni
-    * out: $8 base size + $.50 topping + $.50 topping = $9 total cost
-  * final cost and selected option displays to user
-    * in: small pizza, +2 toppings
-    * out: $8 base size +$1 total toppings = $9 total cost
+    * out: $8 base size + $1 topping + $1 topping = $10 total cost
 
+  * final cost displays to user
+    * in: small pizza, +2 toppings
+    * out: $9 total cost
 
 ## Known Bugs
-  _n/a_
+    _n/a_
 
 ## Support and contact details
    _I would love to hear from you if you encounter any issues, or have questions, ideas or concerns. My email is lowesusannah@gmail.com. Please feel free to make a contribution to the code as well!_
