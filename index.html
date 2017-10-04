@@ -12,43 +12,66 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Order Pizza!</h1>
+        <img src="img/pizza-logo.jpg" alt="pizza logo" max width="20%" height="auto" class="thumbnail">
+        <h1 class="display-3">Susannah's Brick Oven Pizza </h1>
+        <hr class="my-4">
+        <p class="lead">Select your pizza options, and we'll have your pizza to you in no time!</p>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Select your pizza options, and we'll have your pizza to you in no time!</h3>
-        </div>
-      </div>
-      <form id="pizza-form"  action="index.html" method="post">
-      <div class="row">
-        <div class="col-md-4">
-        <label for="pizza-size">Select your pizza's size </label>
-          <select class="form-control" id="pizza-size">
-            <option value="7">Small, starting at $7</option>
-            <option value="8">Medium, starting at $8</option>
-            <option value="9">Large, starting at $9</option>
-          </select>
-        </div>
-        <div class="pizza-toppings">
-        <label class="pizza-toppings">Select any additional toppings you'd like. Each additional topping is $1 extra</label><br>
-        <div class="col-md-4">
-            <input type="checkbox" name="toppings" value=1 id="pepperoni"> Pepperoni<br>
-            <input type="checkbox" name="toppings" value=1 id="mushrooms"> Mushrooms<br>
-            <input type="checkbox" name="toppings" value=1 id="extra-cheese"> Extra Cheese<br>
+        <form id="pizza-form"  action="index.html" method="post">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <h3><label for="pizza-size">
+                        Select your pizza's size </label></h3>
+                        <select class="form-control" id="pizza-size">
+                          <option value="7">Small, starting at $7</option>
+                          <option value="8">Medium, starting at $8</option>
+                          <option value="9">Large, starting at $9</option>
+                        </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="pizza-toppings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <label class="pizza-toppings">
+                        <br>
+                        <h3>Select any additional toppings you'd like.</h3>
+                        <h5>Each additional topping is $1 extra</h5></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <input type="checkbox" name="toppings" value=1 id="pepperoni"> Pepperoni<br>
+                      <input type="checkbox" name="toppings" value=1 id="mushrooms"> Mushrooms<br>
+                      <input type="checkbox" name="toppings" value=1 id="extra-cheese"> Extra Cheese<br>
+                      <br>
+                    </div>
+                  </div>
+              </div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <br>
+                    <button type="submit" class="btn btn-success" name="button">Get me my pizza!</button>
+                    <br>
+                    <br>
+                    <img class="img-fluid float-left" src="img/pizza.png" alt="pizza">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+        <div id="total-cost">
+          <div id="pizza-output">
+            <h2></h2>
           </div>
         </div>
-        <div class="col-md-4">
-          <button type="submit" class-"btn btn-info" name="button">Get me my pizza!</button>
-        </div>
-      </div>
-      </form>
-        <div class="row">
-          <div id="total-cost" class="col-md-12">
-            <h3>Your total pizza cost is:</h3>
-            <h3></h3>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
